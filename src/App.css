@@ -1,0 +1,106 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.container {
+  height: 100vh;
+  overflow: hidden;
+  position: relative; /* 🔥 penting */
+  background: linear-gradient(135deg, #cce7ff, #e6f2ff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pre-open {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* bebek */
+.duck {
+  font-size: 50px;
+  animation: float 2s ease-in-out infinite;
+}
+
+/* efek gerak tambahan */
+@keyframes float {
+  0% {
+    transform: translateY(0px) rotate(-5deg);
+  }
+  50% {
+    transform: translateY(-10px) rotate(5deg);
+  }
+  100% {
+    transform: translateY(0px) rotate(-5deg);
+  }
+}
+/* Amplop */
+.envelope {
+  width: 300px;
+  height: 200px;
+  position: relative;
+  cursor: pointer;
+}
+
+.body {
+  width: 100%;
+  height: 100%;
+  background: #6bb9ff;
+  border-radius: 10px;
+}
+
+.flap {
+  width: 0;
+  height: 0;
+  border-left: 150px solid transparent;
+  border-right: 150px solid transparent;
+  border-bottom: 100px solid #4da3ff;
+  position: absolute;
+  top: 0;
+}
+
+/* Surat */
+.letter {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  width: 320px;
+  text-align: center;
+  z-index: 10;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.typing {
+  font-size: 16px;
+  color: #333;
+}
+
+
+.flower {
+  position: absolute;
+  font-size: 18px;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.leaf {
+  position: absolute;
+  font-size: 20px;
+  z-index: 1;
+  
+  pointer-events: none;
+}
+.flower {
+  text-shadow: 0 0 5px pink;
+}
+
+.leaf {
+  text-shadow: 0 0 5px green;
+}
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* 🔥 ini kunci utama */
+}
