@@ -7,7 +7,7 @@ const message = `Thank you for your sweet message… it really made me smile
 I’m really happy that we could spend time together when you were here. Honestly, those moments felt very special to me
 
 I felt a bit sad when you had to leave… I hope next time we can have more time together again 
-I always feel very comfortable plus shy too talking with you heheS, it’s something I don’t find easily.
+I always feel very comfortable plus shy too talking with you hehe.., it’s something I don’t find easily.
 
 Take care there, Aaghaye Hosein
 I hope everything goes well for you 🌿
@@ -132,7 +132,7 @@ function App() {
             </motion.div>
           ))}
 
-          {/* 💌 surat */}
+          {/* surat */}
           <motion.div
             className="letter"
             initial={{ scale: 0.5, opacity: 0 }}
